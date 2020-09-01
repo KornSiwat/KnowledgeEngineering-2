@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_building_in_KU#"
+     xml:base="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_building_in_KU"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for knowledge engineering malls assignment.
+scope: giving tourist a mall information</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasOfferingType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasOfferingType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isOfferingTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreOfferingType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPlace">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isLocatedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPublicTransportation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPublicTransportation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isPublicTransportationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasRetailer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasRetailer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPlace"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isRetailerIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isOfferingTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isOfferingTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreOfferingType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isPublicTransportationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isPublicTransportationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isRetailerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isRetailerIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isLocatedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasCarParkingCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasCarParkingCapacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasClosingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasClosingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasNumberOfFloor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasNumberOfFloor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasOpeningTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasOpeningTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekdaysClosingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekdaysClosingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasClosingTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekdaysOpeningTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekdaysOpeningTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasOpeningTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekendsClosingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekendsClosingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasClosingTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekendsOpeningTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasWeekendsOpeningTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#hasOpeningTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isAlsoKnownAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isAlsoKnownAs">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isLegalAgeRestricted -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isLegalAgeRestricted">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isPetAllow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#isPetAllow">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#ApparelStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#ApparelStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านค้าด้านเครื่องนุ่งห่ม</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#BTS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#BTS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#CameraProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#CameraProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A city is an area where people live together. Cities have their own separate government and system for maintaining and providing utilities and transportation</rdfs:comment>
+        <rdfs:label xml:lang="th">เมือง</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#ClothingProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#ClothingProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#CommunityMall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#CommunityMall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A community mall is a small scale mall</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plaza</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">คอมมูนิตี้มอลล์</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Owner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#DeliveryStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#DeliveryStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#DepartmentStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#DepartmentStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A department store is a large shop which sells many different kinds of goods</rdfs:comment>
+        <rdfs:label xml:lang="th">ห้างสรรพสินค้า</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#DirectoryService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#DirectoryService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#District -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#District">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A district is an area in a city</rdfs:comment>
+        <rdfs:label xml:lang="th">เขต</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#EducationalStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#EducationalStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#EntertainmentStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#EntertainmentStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านค้าด้านการบันเทิง</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#FinancialStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#FinancialStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ร้านค้าด้านการเงิน</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#FirstAidRoomService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#FirstAidRoomService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#FitnessService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#FitnessService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#GroceryStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#GroceryStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านขายของชำ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#HaircutService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#HaircutService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#HealthCareStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#HealthCareStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านค้าด้านสุขภาพ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Individual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Individual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Owner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#JewelryProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#JewelryProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#LaundryService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#LaundryService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#LostAndFoundService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#LostAndFoundService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MRT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MRT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mall is a place containing a variety of retail stores</rdfs:comment>
+        <rdfs:label xml:lang="th">ที่ทำการค้า</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MassageService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MassageService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MovieProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MovieProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MovieShowingService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MovieShowingService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Owner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PhoneProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PhoneProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place is an area or region of the world</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">สถานที่</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PrayerRoomService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PrayerRoomService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#PublicTransportation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#RefreshmentStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#RefreshmentStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านค้าด้านอาหารและเครื่องดื่ม</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#ShoppingMall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#ShoppingMall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Mall"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shopping mall is a large scale mall</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ShoppingCenter</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ShoppingComplex</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ศูนย์การค้า</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#SpecializedServiceStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#SpecializedServiceStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านค้าด้านบริการ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Place"/>
+        <rdfs:label xml:lang="en">shop</rdfs:label>
+        <rdfs:label xml:lang="en">store</rdfs:label>
+        <rdfs:label xml:lang="th">ร้านค้า</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreOfferingType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreOfferingType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreProductType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreOfferingType"/>
+        <rdfs:label xml:lang="th">สินค้า</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreServiceType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#StoreOfferingType"/>
+        <rdfs:label xml:lang="th">บริการ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#TechnologyStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#TechnologyStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#Store"/>
+        <rdfs:label xml:lang="th">ร้านค้าด้านเทคโนโลยี</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#VeletParkingService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#VeletParkingService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#WheelChairService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#WheelChairService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/8/6640_malls#MallService"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

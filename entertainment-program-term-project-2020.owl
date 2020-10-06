@@ -1,0 +1,738 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#"
+     xml:base="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020">
+        <rdfs:comment>Group Member: Siwat 6110546640, Patteera 6110545597, Apipark 6110546429, Tanapol 6110545511</rdfs:comment>
+        <rdfs:comment>Scope: Entertainment Program of Streaming Services (Netflix, Amazon Prime Video, HBO GO, Disney Plus) and the shows related Information</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasAudioLanguageAvailibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasAudioLanguageAvailibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasLanguageAvalibility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasAward">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasAwardType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasAwardType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Award"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasContributor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasContributor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowContribution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasLanguageAvalibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasLanguageAvalibility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasLocationAvailbility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasLocationAvailbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingProgram"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Rating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasRatingSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasRatingSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Rating"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#RatingSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasShowContributionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasShowContributionType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowContribution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasSubtitleLanguageAvailibility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasSubtitleLanguageAvailibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasLanguageAvalibility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#hasShow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#hasShow">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingProgram"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#hasShowContribution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#hasShowContribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowContribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#hasStreamingProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#hasStreamingProgram">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasIncome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasIncome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasRatingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasRatingValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasShowReleaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasShowReleaseDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasStreamingProgramReleaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#hasStreamingProgramReleaseDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#GShowAudienceRestrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#GShowAudienceRestrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeneralAudience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#MShowAudienceRestrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#MShowAudienceRestrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M Restriction indicates that the show is recommended for mature audiences</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MatureAudience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#PG13ShowAudienceRestrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#PG13ShowAudienceRestrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#PGShowAudienceRestrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#PGShowAudienceRestrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#RShowAudienceRestrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#RShowAudienceRestrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RestrictedAudience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowContribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowContribution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#XShowAudienceRestrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#XShowAudienceRestrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#ShowAudienceRestriction"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X Restriction indicates that the show is recommended for audiences with age 17 and above</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ActionShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ActionShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ActorShowContributionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ActorShowContributionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AnimeShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AnimeShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestActorAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestActorAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestActressAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestActressAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestAdaptedScreenplayAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestAdaptedScreenplayAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestAnimatedFeatureFilmAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestAnimatedFeatureFilmAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestCinematographyAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestCinematographyAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestCostumeDesignAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestCostumeDesignAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestDirectorAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestDirectorAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestFilmEditingAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestFilmEditingAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestForeignLanguageFilmAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestForeignLanguageFilmAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestMakeupAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestMakeupAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestOriginalScreenplayAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestOriginalScreenplayAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestPictureAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestPictureAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestProductionDesignAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestProductionDesignAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestSongAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestSongAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestSpecialEffectsAwardType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#BestSpecialEffectsAwardType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AwardType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ChildrenAndFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ChildrenAndFamily">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ComedyShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ComedyShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DirectorShowContributionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DirectorShowContributionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DocumentaryShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DocumentaryShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DramaShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DramaShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#EroticShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#EroticShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#FantasyShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#FantasyShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#HistoricShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#HistoricShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#HorrorShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#HorrorShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Movie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#MusicComposerShowContributionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#MusicComposerShowContributionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#People"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ProducerShowContributionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ProducerShowContributionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Rating">
+        <rdfs:comment>Rating represent rating and its related information</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#RatingSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#RatingSource">
+        <rdfs:comment>Rating Source is where the rating come from</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#RomanceShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#RomanceShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Sci-fiShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Sci-fiShowType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ScreenPlayShowContributionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ScreenPlayShowContributionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Serie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Serie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Show"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowContributionType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#ShowType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingProgram"/>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AmazonPrimeVideo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#AmazonPrimeVideo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DisneyPlus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#DisneyPlus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#HBOGo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#HBOGo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Netflix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#Netflix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/term-project-2020#StreamingServiceProvider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#GShowAudienceRestrition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#MShowAudienceRestrition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#RShowAudienceRestrition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/siwatponpued/ontologies/2020/9/entertainment-program-term-project-2020#XShowAudienceRestrition"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
